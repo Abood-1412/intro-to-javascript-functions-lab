@@ -82,7 +82,70 @@ Complete the exercise in the space below:
 */
 
 function generateEmail(name,domain) {
-    
+    return `${name}@${domain}`;
 }
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+
+
+console.log("---------------------------------");
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+function greetUser(name,time) {
+
+    return `Good ${time}, ${name}!`;
+}
+
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+
+
+
+console.log("---------------------------------");
+
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+function maxOfThree(num1, num2, num3) {
+  let max;
+
+  if (num1 >= num2 && num1 >= num3) {
+    max = num1;
+  } else if (num2 >= num1 && num2 >= num3) {
+    max = num2;
+  } else {
+    max = num3;
+  }
+
+  return max;
+}
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+
+
+console.log("---------------------------------");
+
+
+
+
+
